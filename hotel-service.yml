@@ -3,13 +3,13 @@ spring:
     name: HOTEL-SERVICE
 
   datasource:
-    url: jdbc:mysql://localhost:3306/microservice
-    username: root
-    password: root
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:postgresql://localhost:5432/microservice
+    username: postgres
+    password: user
+    driver-class-name: org.postgresql.Driver
 
   jpa:
-    database-platform: org.hibernate.dialect.MySQLDialect
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: update
     show-sql: true
